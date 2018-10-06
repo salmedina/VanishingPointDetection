@@ -94,7 +94,7 @@ void drawClusters( cv::Mat &img, std::vector<std::vector<double> > &lines, std::
 	}
 }
 
-void main()
+int main(int argc, char **argv)
 {
 	string inPutImage = "D:\\DevelopCenter\\VanishingPoints\\datasets\\YorkUrbanDB\\P1020171\\P1020171.jpg";
 
@@ -122,4 +122,6 @@ void main()
 	drawClusters( image, lines, clusters );
 	imshow("",image);
 	cv::waitKey( 0 );
+
+	return 0;
 }
